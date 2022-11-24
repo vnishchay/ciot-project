@@ -9,6 +9,6 @@ import {
 
 const userRouter = express.Router()
 
-userRouter.get('/user/currentUser', getMe)
+userRouter.post('/user/currentUser', getMe)
 userRouter.patch('/user/addCar', updateUser )
 export default userRouter
